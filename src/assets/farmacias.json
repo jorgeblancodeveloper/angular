@@ -1,0 +1,24 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "NOMBRE": "Av de Levante, 101", "TELEFONO": "91 670 10 69", "BARRIO": "Este" }, "geometry": { "type": "Point", "coordinates": [ -3.512613761167392, 40.329723022431956 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Cl Marie Curie, 4", "TELEFONO": "91 713 66 84", "BARRIO": "Este" }, "geometry": { "type": "Point", "coordinates": [ -3.524233182007552, 40.336166165214891 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Av de Levante, 236", "TELEFONO": "91 499 53 14", "BARRIO": "Este" }, "geometry": { "type": "Point", "coordinates": [ -3.519423995428813, 40.340638136879491 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Cl Mary Shelly, 2, L-4", "TELEFONO": "91 752 89 21", "BARRIO": "Oeste" }, "geometry": { "type": "Point", "coordinates": [ -3.532803977683475, 40.377990975831842 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Av de Pablo Iglesias, 81", "TELEFONO": "91 301 20 93", "BARRIO": "Centro" }, "geometry": { "type": "Point", "coordinates": [ -3.524915929947031, 40.348472249690218 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Av de Pablo Iglesias n, 84", "TELEFONO": "91 499 89 76", "BARRIO": "Centro" }, "geometry": { "type": "Point", "coordinates": [ -3.521863590842961, 40.344894325469667 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Cl Aloe, 14", "TELEFONO": "91 666 08 71", "BARRIO": "Centro" }, "geometry": { "type": "Point", "coordinates": [ -3.534402654828862, 40.361220829335444 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Cl María Zambrano, 3", "TELEFONO": "91 499 98 22\/55", "BARRIO": "Centro" }, "geometry": { "type": "Point", "coordinates": [ -3.534167475411653, 40.353861306107959 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Cl Parque Rivas s\/n", "TELEFONO": "91 301 26 61", "BARRIO": "Centro" }, "geometry": { "type": "Point", "coordinates": [ -3.536992295622509, 40.341188047147391 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Paseo de la Chopera, 9", "TELEFONO": "91 301 17 71", "BARRIO": "Oeste" }, "geometry": { "type": "Point", "coordinates": [ -3.537669436527479, 40.366496700175411 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Plaza Clarí­n, 8", "TELEFONO": "91 670 26 33", "BARRIO": "Oeste" }, "geometry": { "type": "Point", "coordinates": [ -3.55392119321735, 40.361523005203445 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Cl Silvia Munt, 5", "TELEFONO": "91 499 89 04", "BARRIO": "Centro" }, "geometry": { "type": "Point", "coordinates": [ -3.518930531138426, 40.356622607983397 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Plaza de Pablo Picasso, 1", "TELEFONO": "91 666 15 55", "BARRIO": "Oeste" }, "geometry": { "type": "Point", "coordinates": [ -3.550132832184679, 40.364557589162736 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Plaza de la Constitución, 2", "TELEFONO": "91 666 71 35", "BARRIO": "Centro" }, "geometry": { "type": "Point", "coordinates": [ -3.547752222378044, 40.355850257605148 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Plaza Federico Garcí­a Lorca, 2", "TELEFONO": "91 666 83 27", "BARRIO": "Oeste" }, "geometry": { "type": "Point", "coordinates": [ -3.550914025173398, 40.366095823202294 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Plaza de Extremadura, 2", "TELEFONO": "91 666 90 29", "BARRIO": "Oeste" }, "geometry": { "type": "Point", "coordinates": [ -3.548356017787504, 40.365956627014342 ] } },
+{ "type": "Feature", "properties": { "NOMBRE": "Pz de Asturias, 1", "TELEFONO": "91 301 21 45", "BARRIO": "Oeste" }, "geometry": { "type": "Point", "coordinates": [ -3.549111408307497, 40.36299948077324 ] } }
+]
+}
