@@ -1,16 +1,17 @@
+<select  (change)="onChange($event)">
+  <option *ngFor="let v of values" [value]="v.value" >  
+    {{v.name}}
+  </option>
+</select>
 <div *ngIf="mostrar" class="card">
-  <button type="button" (click)="mostrar=false">Cerrar</button>
+  <button type="button" (click)="this.reinit()">Cerrar</button>
 
     <div> <b>Calle: </b>{{nombre}}</div>
     <div> <b>Tel: </b> {{telefono}}</div>
     <div><b>Barrio: </b>{{barrio}}</div>
 </div>
-<select  (change)="onChange($event)">
-  <option *ngFor="let v of values" [value]="v.name" >  
-    {{v.name}}
-  </option>
-</select>
-{{filtro}}
-<agm-map [latitude]="40.329723022431956" [longitude]="-3.512613761167392" [zoom]="12">
-    <agm-marker  *ngFor="let punto of puntos, let i=index" (markerClick)="clickedMarker(i)" [latitude]="punto.geometry.coordinates[1]  " [longitude]="punto.geometry.coordinates[0] "></agm-marker>
+
+
+<agm-map [latitude]="lat" [longitude]="lon" [zoom]="zoom" [usePanning]="true">
+    <agm-marker  *ngFor="let punto of puntos, let i=index" (markerClick)="clickedMarker(i)" [latitude]="punto.geometry.coordinates[1] " [longitude]="punto.geometry.coordinates[0]"  [iconUrl]=" icon"></agm-marker>
 </agm-map>

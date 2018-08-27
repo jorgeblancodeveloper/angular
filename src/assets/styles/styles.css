@@ -226,20 +226,33 @@ mapa {
     flex-direction: column;
 }
 mapa select{
-    padding:1em;
+    padding: 0.2em;
+    padding-left: 2em;
+    /* background: -webkit-linear-gradient(white, #666); */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #5460bf;
+    height: 2.7em;
+    /* text-shadow: 0 0 4px rgba(0, 0, 0, 0.8); */
+    -webkit-appearance: none;
+    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABSUlEQVRYhe2OwUoCURSGv3NNeoBWPUNPkRDRKlxkBEWU0UIIotmK3QxbhS2ijEAQatEQRO3c+RY9QrtWrUL0tLgWJpozgxrUfLt7zrn/90NMTMx/Ryioh2H+V+xtGlMYKsACyuKE9XXeuBQA9nSaGXyU5YmohSdeWeVc3uVruKtJZrkFMmOW+7ywwbU03bObFU0wRxVlc0z6Gs/scC+tz4H5tnaLbeBq5GqhgpDtlrtxX1Q4pAzsj0h+hsUD0d6V6XcPohxxAJyMQF4aJHfrYVjNoxxHkit5ilL6uV8QCuohnIaSCx5WysPPgmI1h3IR6FbJUZRKkNPgBQAKuoWhig7810bIYqUWNDJcAVdiDcMNSqInqQWsY+UuTFz4Aq5EGoOPkuykNIEMVh7DRkUr4EosITx0UtJYqUfOiozVFFZTkxfHxMT8JT4Aa19VJuNHfQQAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    background-size: auto 50%;
 }
 agm-map[_ngcontent-c0] {
     height: 80vh !important;
 }
 .card + agm-map[_ngcontent-c0] {
-    height: 67vh !important;
+    height: 64vh !important;
 }
 .card, .card div{
     padding:0.3em;
 
 }
 .card{
-        height: 13vh;
+        height: 15vh;
         position:relative;
 }
 .card button{
@@ -250,4 +263,12 @@ agm-map[_ngcontent-c0] {
     background: #caceec;
     color:#fff;
     font-weight:bold;
+}
+
+.loading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100%;
 }
