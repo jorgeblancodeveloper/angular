@@ -16,11 +16,11 @@ import { SobremiComponent } from './sobremi/sobremi.component';
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
-  imports:      [ BrowserModule,   HttpClientModule ,FormsModule, AppRoutingModule,AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyB4rG7ZcdKMgJfyc6gEx7IlUelwo6atg6M',libraries: ["places"]
+  imports:      [ BrowserModule ,    HttpClientModule ,FormsModule, AppRoutingModule,AgmCoreModule.forRoot({
+      apiKey: 'miapy',libraries: ["places"]
     }) ], 
   declarations: [ AppComponent, AppRoutingModule.components, HelppageComponent, NavegacionComponent, SobremiComponent ],
-  providers:    [ DataService ],
+  providers:    [  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

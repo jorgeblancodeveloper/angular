@@ -1,17 +1,18 @@
+
+<div *ngIf="mostrar" class="card">
+  <button type="button" (click)="this.reinit()">Cerrar</button>
+<div><b>Barrio: </b>{{barrio}}</div>
+    
+    <div> <b>Tel: </b> {{telefono}}</div>
+    <div> <b>Calle: </b>{{nombre}}</div>
+</div>
+
+
+<agm-map [latitude]="lat" [longitude]="lon" [zoom]="zoom" [usePanning]="true">
+    <agm-marker  *ngFor="let punto of farmacias.features, let i=index" (markerClick)="clickedMarker(i)" [latitude]="punto.geometry.coordinates[1] " [longitude]="punto.geometry.coordinates[0]"  [iconUrl]=" icon"></agm-marker>
+</agm-map>
 <select  (change)="onChange($event)">
   <option *ngFor="let v of values" [value]="v.value" >  
     {{v.name}}
   </option>
 </select>
-<div *ngIf="mostrar" class="card">
-  <button type="button" (click)="this.reinit()">Cerrar</button>
-
-    <div> <b>Calle: </b>{{nombre}}</div>
-    <div> <b>Tel: </b> {{telefono}}</div>
-    <div><b>Barrio: </b>{{barrio}}</div>
-</div>
-
-
-<agm-map [latitude]="lat" [longitude]="lon" [zoom]="zoom" [usePanning]="true">
-    <agm-marker  *ngFor="let punto of puntos, let i=index" (markerClick)="clickedMarker(i)" [latitude]="punto.geometry.coordinates[1] " [longitude]="punto.geometry.coordinates[0]"  [iconUrl]=" icon"></agm-marker>
-</agm-map>

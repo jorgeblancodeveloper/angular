@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-//import { features } from ' ../../farmacias.json';
-
-
-
 import { HttpClient } from '@angular/common/http';
-import { HttpErrorResponse } from '@angular/common/http';
 
+declare
+var require: any;
 
-//console.log(features);
 @Component({
     selector: 'mapa',
     templateUrl: './mapa.component.html',
@@ -16,7 +12,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 
 
 export class mapaComponent implements OnInit {
-    //puntos = features;
+
     mostrar: boolean;
     nombre = "";
     telefono = "";
@@ -30,10 +26,12 @@ export class mapaComponent implements OnInit {
     lat = 40.353861306107959;
     lon = -3.534167475411653;
     zoom = 12;
-    puntos = [];
+    puntos: any;
+    farmacias: any;
+
     filtro = "todos";
     public onChange(event): void { // event will give you full breif of action
-        var  newVal = event.target.value;
+        var newVal = event.target.value;
         this.filtro = newVal;
 
         if (newVal != "Todos") {
@@ -41,11 +39,11 @@ export class mapaComponent implements OnInit {
         }
     }
 
-    public clickedMarker(este) {
+    private clickedMarker(este) {
         if (this.farmacias) {
-        	this.lat =this.farmacias.features[este].geometry.coordinates[1];
-        	this.lon =this.farmacias.features[este].geometry.coordinates[0];
-        	this.zoom = 14;
+            this.lat = this.farmacias.features[este].geometry.coordinates[1];
+            this.lon = this.farmacias.features[este].geometry.coordinates[0];
+            this.zoom = 14;
             this.mostrar = true;
             this.nombre = this.farmacias.features[este].properties.NOMBRE;
             this.telefono = this.farmacias.features[este].properties.TELEFONO;
@@ -54,13 +52,11 @@ export class mapaComponent implements OnInit {
         }
     };
     reinit() {
-    	console.log ("patata")
-    	 this.lat = 40.353861306107959;
-    this.lon = -3.534167475411653;
-    this.zoom = 12;
-    this.mostrar=false;
-    //  this.puntos = this.farmacias.features.filter(item => item.properties.BARRIO == this.filtro);
-    }
+        this.lat = 40.353861306107959;
+        this.lon = -3.534167475411653;
+        this.zoom = 12;
+        this.mostrar = false;
+    };
 
     private icon = {
         url: require('../../cruz.png'),
@@ -68,25 +64,18 @@ export class mapaComponent implements OnInit {
             height: 30,
             width: 30
         }
+
+
     };
-    constructor(private httpService: HttpClient) {}
-    farmacias: string[];
+    constructor(private http: HttpClient) {}
 
+    ngOnInit(): void {
+        this.http.get('./assets/farmacias.json').subscribe(data => {
 
-    ngOnInit() {
-        this.httpService.get('./assets/farmacias.json').subscribe(
-            data => {
-                this.farmacias = data as any[]; // FILL THE ARRAY WITH DATA.
-                //console.log(this.farmacias);
-                console.log(this.farmacias.features[3].properties.NOMBRE);
-                this.puntos = this.farmacias.features;
+            this.farmacias = data;
 
-            },
-            (err: HttpErrorResponse) => {
-                console.log(err.message);
+        });
 
-            }
-        );
 
 
     }
