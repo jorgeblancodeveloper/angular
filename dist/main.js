@@ -153,7 +153,7 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
             imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _agm_core__WEBPACK_IMPORTED_MODULE_10__["AgmCoreModule"].forRoot({
-                    apiKey: 'AIzaSyB4rG7ZcdKMgJfyc6gEx7IlUelwo6atg6M', libraries: ["places"]
+                    apiKey: 'miapi', libraries: ["places"]
                 })],
             declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"].components, _helppage_helppage_component__WEBPACK_IMPORTED_MODULE_7__["HelppageComponent"], _navegacion_navegacion_component__WEBPACK_IMPORTED_MODULE_8__["NavegacionComponent"], _sobremi_sobremi_component__WEBPACK_IMPORTED_MODULE_9__["SobremiComponent"]],
             providers: [_shared_data_service__WEBPACK_IMPORTED_MODULE_6__["DataService"]],
